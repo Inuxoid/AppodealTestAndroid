@@ -1,0 +1,73 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/native_ad_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list_view_for_ads"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/btnShowBanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/native_ad_container" />
+
+    <Button
+        android:id="@+id/btnShowBanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_banner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnShowInterstitial"/>
+
+    <Button
+        android:id="@+id/btnShowInterstitial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_interstitial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnShowRewardedVideo"/>
+
+    <Button
+        android:id="@+id/btnShowRewardedVideo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_rewarded_video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnShowNative"/>
+
+    <Button
+        android:id="@+id/btnShowNative"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_native_ads"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnHideNative"/>
+
+    <Button
+        android:id="@+id/btnHideNative"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hide_native_ads"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

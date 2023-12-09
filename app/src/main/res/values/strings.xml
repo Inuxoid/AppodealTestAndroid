@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppTest</string>
+    <string name="show_interstitial">Show Interstitial</string>
+    <string name="close_banner">Close Banner</string>
+    <string name="show_banner">Show Banner</string>
+    <string name="show_rewarded_video">Show Rewarded Video</string>
+    <string name="show_native_ads">Show Native Ads</string>
+    <string name="hide_native_ads">Hide Native Ads</string>
+</resources>
